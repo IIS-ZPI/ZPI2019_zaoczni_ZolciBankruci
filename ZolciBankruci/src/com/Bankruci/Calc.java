@@ -5,6 +5,7 @@ public class Calc implements IArithmeticsDiv, IArithmeticsAdd, IArithmeticsMult,
     @Override
     public double Difference(double A, double B) {
         return A - B;
+        // Wiktor comment1
     }
   
     @Override
