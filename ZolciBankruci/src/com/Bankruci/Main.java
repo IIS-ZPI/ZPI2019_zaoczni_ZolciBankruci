@@ -6,6 +6,7 @@ public class Main {
         System.out.println("ZolciBankruci - TEAM LEADER + SCRUM MASTER: Alterwik");
         System.out.println("Zbyszek212322");
         System.out.println("wynkelring");
+        //Wiktor comment2
         System.out.println("ZolciBankruci - FRONT DEV: mojzesowic");
         System.out.println("ApuApustaja - DevOps");
         System.out.println("Alterwik");
