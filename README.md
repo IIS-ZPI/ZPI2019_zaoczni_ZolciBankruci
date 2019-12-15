@@ -1,0 +1,1 @@
+Tablica trello: https://trello.com/2019_zpi_zolcibankruci
