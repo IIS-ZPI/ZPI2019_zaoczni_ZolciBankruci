@@ -19,6 +19,6 @@ public class Calc implements IArithmeticsDiv, IArithmeticsAdd, IArithmeticsMult,
   
     @Override
     public double Multiplication(double A, double B) {
-        return A * B;
+        return A * B;//mnożonko
     }
 }
