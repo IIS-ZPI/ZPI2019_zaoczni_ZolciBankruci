@@ -9,7 +9,7 @@ public class Calc implements IArithmeticsDiv, IArithmeticsAdd, IArithmeticsMult,
   
     @Override
     public double Division(double A, double B) {
-        return A / B;
+        return A / B;//dzielonko
     }
   
     @Override
