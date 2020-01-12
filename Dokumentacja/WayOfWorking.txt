@@ -1,14 +1,30 @@
 ---- WOW ( Way of working )------------------------------------------------------------------------
+
+Praca w sprincie
+	Zaspołowo ustalamy długść sprintu, backlog zadań do wykonania wraz z odpowiednimi tagami oraz cel sprintu.
+	Tematy do omówienia po sprincie dotyczące poprawy organizacji pracy lub pracy w zespole zbierane są w specjalnej kolumnie w trakcie sprintu na bieżąco.
+	Pod koniec sprintu przygotowujemy podsumowanie po sprincie zawierające spis wykonanych zadań wraz z opisem problemów zaistniałych w trakcie ich realizacji. Uwzględniane są też problemy z komunikacją w zespole.
+	Zadania związane z tworzeniem kodu funkcjonalnego i testów jednostkowych oznaczane są tagiem "DEV".
+	Zadania ułatwiające organizacje pracy są oznaczane tagiem "Scrumowe".
+	Zadania związane z automatyzacją i pipelinem oznaczone są tagiem "DEVOPS".
+	Zadania związane z testami innymi niż jednostkowe oznaczone są tagami "TEST".
+	Zadania związane z graficznym przedstawieniem danych oznaczone są tagiem "Frontend".
+	Zadania odnoszące się do poprawy błędów oznaczone są tagiem "BUGFIX".
+
 Praca z featurem 
-	1 Tworzymy ticket na trello z nazwą funkcjonalności oraz kolorowym tagiem z numerem/nazwą featura oraz z tagiem DEV
-	2 Priorytety zadania są wyznaczane przez kolejność w kolumnie
+	1 Tworzymy ticket na trello z nazwą funkcjonalności oraz kolorowym tagiem z numerem/nazwą featura oraz z tagiem DEV.
+	2 Priorytety zadania są wyznaczane przez kolejność w kolumnie.
 	3 Deweloper przypusuje się do zadanie, jakie chce zrobić. Ticket trafia do kolumny ongoing.
-	4 Deweloper tworzy nową branch z nazwą finkclonalności w zdalnym repozytorium. Efakty pracy związane z daną funkcjonalnością sa pushowne na stworzoną branch.
+	4 Deweloper tworzy nową branch z nazwą funkclonalności w zdalnym repozytorium. Efekty pracy związane z daną funkcjonalnością sa pushowne na stworzoną branch. Gałąź z githuba jest linkowana do ticketu z zadaniem.
 	5 Developer jest odpowiedzialny za testy jednostkowe.
 	6 Po wykonaniu kodu tworzy pull requesta ze stworzonej branchy na develop. Ticket trafia do kolumny code review. Dołącza innego developera do zatwierdzenia jego commita.
 	7 Kod po zmergowaniu trafia do kolumny test. Następnie tester wykonuje testy wydajnościowe i funkcjonalne oraz zwraca feedback do developera.
-	8 Jeżeli wszystkie testy przebiegły prawidłowo ticket trafia do kolumny done.
+	8 Jeżeli wszystkie testy przebiegły prawidłowo ticket trafia do kolumny done, jeżeli nie to zostaje stworzony nowy ticket z etykietą BUGFIX.
+	Tester lub członek zespołu w trakcie znalezienia błędu tworzy ticket z etykietą BUGFIX.
 	9 Po zakończeniu sprintu wszystkie tickety z kolumny done trafiają do kolumny podsumowywującej sprint.
 	10. Każde ukończenie działającej, kompletnej finkcjonalności jest oznaczane przez SMa nowym release tagiem.
+
+
+
 ---------------------------------------------------------------------------------------------------
 
