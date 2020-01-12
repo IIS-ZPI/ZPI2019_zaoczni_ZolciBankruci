@@ -1,6 +1,5 @@
 # file: ~/.gitignore_global
 .DS_Store
 .idea
-ZolciBankruci/out
 NBP_API/.idea
 NBP_API/out/*
