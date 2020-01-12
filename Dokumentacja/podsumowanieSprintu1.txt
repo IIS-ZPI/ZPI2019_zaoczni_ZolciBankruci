@@ -1,0 +1,10 @@
+Sprint 1 niedziela 12.01.2020
+
+Cel sprintu: Zebrać wymagania wstępne do projektu oraz przygotować środowisko developerskie.
+
+Sprint trwał 1 dzień, podczas którego:
+
+Wybraliśmy technologie, w których przygotujemy nasz projekt.
+Przygotowaliśmy wstępny zarys pliku README.md.
+Repozytorium zostalo zainicjalizowane szablonem projektu.
+Zaplanowaliśmy pracę nad frontendem.
