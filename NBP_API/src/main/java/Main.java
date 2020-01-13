@@ -2,10 +2,10 @@ public class Main {
 
     public static void main(String[] args) {
 
-        CurrencyData wynik1 = new CurrencyData("USD", 3);
-        System.out.println(wynik1.getRates());
+        CurrencyData result1 = new CurrencyData("USD", 3);
+        System.out.println(result1.getRates());
 
-        CurrencyData wynik2 = new CurrencyData("USD", "2020-01-01", "2020-01-12");
-        System.out.println(wynik2.getRates());
+        CurrencyData result2 = new CurrencyData("USD", "2020-01-03", "2020-01-03");
+        System.out.println(result2.getRates());
     }
 }
