@@ -1,6 +1,7 @@
 import org.junit.Test;
 
-import java.util.ArrayList;
+import java.time.LocalDate;
+import java.time.format.DateTimeFormatter;
 
 import static org.junit.Assert.*;
 
@@ -11,7 +12,11 @@ public class CurrencyDataTest {
         CurrencyData result1 = new CurrencyData("USD", 3);
         assertEquals(3, result1.getRates().size());
 
-        CurrencyData result2 = new CurrencyData("USD", "2020-01-03", "2020-01-03");
+        DateTimeFormatter formatter = DateTimeFormatter.ofPattern("yyyy-MM-dd");
+        LocalDate date1 = LocalDate.parse("2020-01-03", formatter);
+        LocalDate date2 = LocalDate.parse("2020-01-03", formatter);
+
+        CurrencyData result2 = new CurrencyData("USD", date1, date2);
         assertEquals(3.8213, result2.getRates().get(0));
     }
 }

@@ -3,6 +3,7 @@ import com.sun.jersey.api.client.Client;
 import com.sun.jersey.api.client.ClientResponse;
 import com.sun.jersey.api.client.WebResource;
 
+import java.time.LocalDate;
 import java.util.ArrayList;
 
 public class CurrencyData {
@@ -26,10 +27,11 @@ public class CurrencyData {
         }
     }
 
-    CurrencyData(String curr, String date1, String date2) {
+    CurrencyData(String curr, LocalDate date1, LocalDate date2) {
         try {
             Client client = Client.create();
-            WebResource webResource = client.resource("http://api.nbp.pl/api/exchangerates/rates/a/" + curr + "/" + date1 + "/" + date2 + "/");
+            WebResource webResource = client.resource("http://api.nbp.pl/api/exchangerates/rates/a/" + curr + "/"
+                    + date1.toString() + "/" + date2.toString() + "/");
             ClientResponse webResponse = webResource.accept("application/json").get(ClientResponse.class);
             if (webResponse.getStatus() != 200) {
                 throw new RuntimeException("Błąd HTTP ..." + webResponse.getStatus());
