@@ -1,10 +1,10 @@
-# ZolciBankruci NBP API
+# Żółci Bankruci NBP API
 
 Opis:
 
 ### Struktura dokumentacji
 ```
-Dokument wayOfWorking.txt - 
+Dokument wayOfWorking.txt - Opis schematu pracy podczas tworzenia oprogramowania
 
 TODO: Dokument obowiazkiZespolu.txt - opis zadań poszczególnych członków zespołu
 
@@ -12,9 +12,12 @@ Dokumenty z serii podsumowanieSprintu - opis zrobionych zadań podczas sprintu w
 ```
 
 ### Odnośniki
-Repozytorium: https://github.com/IIS-ZPI/ZPI2019_zaoczni_ZolciBankruci/pull/27
-Tablica trello: https://trello.com/2019_zpi_zolcibankruci
-CI pipeline:
+<ul>
+<li>Repozytorium: https://github.com/IIS-ZPI/ZPI2019_zaoczni_ZolciBankruci/pull/27</li>
+<li>Tablica trello: https://trello.com/2019_zpi_zolcibankruci</li>
+<li>CI pipeline:</li>
+</ul>
+
 
 ### Użyte technologie
 ```
@@ -70,9 +73,13 @@ Przyklady
 ```
 
 ## Authors
+<ul>
+<li>Zbyszek212322    212322    DEV</li>
+<li>mojzesowic          187574    DEV FRONT</li>
+<li>ApuApustaja         202201    DEVOPS</li>
+<li>wynkelring            212487    DEV</li>
+<li>alterwik                 212318    SM TESTER</li>
+</ul>
 
-Zbyszek212322    212322    DEV
-mojzesowic          187574    DEV FRONT
-ApuApustaja         202201    DEVOPS
-wynkelring            212487    DEV
-alterwik                 212318    SM TESTER
+
+
