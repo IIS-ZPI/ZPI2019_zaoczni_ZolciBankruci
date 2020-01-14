@@ -7,6 +7,7 @@ import { SessionCounterComponent } from './components/session-counter/session-co
 import { MenuComponent } from './components/menu/menu.component';
 import { StatisticalMeasureComponent } from './components/statistical-measure/statistical-measure.component';
 import { ChangesOverTimeComponent } from './components/changes-over-time/changes-over-time.component';
+import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { ChangesOverTimeComponent } from './components/changes-over-time/changes
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    NgModule
   ],
   providers: [],
   bootstrap: [AppComponent]
