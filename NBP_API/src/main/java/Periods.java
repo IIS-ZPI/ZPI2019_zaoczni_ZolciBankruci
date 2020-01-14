@@ -7,7 +7,7 @@ public enum Periods {
     THREE_MONTHS,
     SIX_MONTHS,
     ONE_YEAR,
-    LAST_QUATER {
+    LAST_QUARTER {
         public String toString(){
             LocalDate today = LocalDate.now();
             if(today.getMonth().getValue() <= 3){
