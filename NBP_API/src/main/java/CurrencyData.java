@@ -76,7 +76,7 @@ public class CurrencyData {
             return rates;
         }
     }
-    public ArrayList<ArrayList<Double>> getPairRates() {
+    public ArrayList<ArrayList<Double>> getPairRates() throws Exception {
         if(currencyPairs){
             ArrayList<ArrayList<Double>> rates = new ArrayList<>();
             if(currency.getRates().size() == currency.getRates().size()) {
@@ -89,7 +89,7 @@ public class CurrencyData {
             }
             return rates;
         } else {
-            return null;
+            throw new Exception("You can't use this method for just one currency!");
         }
     }
 
