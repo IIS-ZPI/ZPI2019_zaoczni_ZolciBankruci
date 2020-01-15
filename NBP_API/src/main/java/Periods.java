@@ -22,5 +22,15 @@ public enum Periods {
                 return LocalDate.of(today.getYear(), 7, 1).toString();
             }
         }
+    },
+    PREV_MONTH {
+        public String toString(){
+            LocalDate today = LocalDate.now();
+            if(today.getMonth().getValue() == 1){
+                return LocalDate.of(today.getYear()-1, 12, 1).toString();
+            } else {
+                return LocalDate.of(today.getYear(), today.getMonth().minus(1), 1).toString();
+            }
+        }
     };
 }
