@@ -38,6 +38,12 @@ public class StatisticalMeasures {
         return maxValue;
     }
 
+    public double getCoefficient(){
+        double mean = getMean();
+        double standardDeviation = getStandardDeviation();
+        return standardDeviation/mean;
+    }
+
     private double getMean() {
         double sum = 0.0;
         int length = currencyData.getRates().size();
