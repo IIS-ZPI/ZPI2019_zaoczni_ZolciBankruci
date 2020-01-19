@@ -24,11 +24,10 @@ steps:
     testResultsFiles: '**/surefire-reports/TEST-*.xml'
     goals: 'package'
     checkStyleRunAnalysis: true
-    publishJUnitResults: true 
-    testResultsFiles: '**/surefire-reports/TEST-*.xml' # Required when publishJUnitResults == True
-    testRunTitle: # Optional
+
+    # testRunTitle: # Optional
     codeCoverageToolOption: 'None' # Optional. Options: none, cobertura, jaCoCo. Enabling code coverage inserts the `clean` goal into the Maven goals list when Maven runs.
-    codeCoverageClassFilter: # Optional. Comma-separated list of filters to include or exclude classes from collecting code coverage. For example: +:com.*,+:org.*,-:my.app*.*
-    codeCoverageClassFilesDirectories: # Optional
-    codeCoverageSourceDirectories: # Optional
+    #codeCoverageClassFilter: # Optional. Comma-separated list of filters to include or exclude classes from collecting code coverage. For example: +:com.*,+:org.*,-:my.app*.*
+    #codeCoverageClassFilesDirectories: # Optional
+    codeCoverageSourceDirectories: NBP_API/src/main/java/
     codeCoverageFailIfEmpty: false # Optional
