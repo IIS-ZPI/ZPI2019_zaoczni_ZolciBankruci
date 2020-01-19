@@ -22,7 +22,7 @@ Praca z featurem
 	8 Jeżeli wszystkie testy przebiegły prawidłowo ticket trafia do kolumny done, jeżeli nie to zostaje stworzony nowy ticket z etykietą BUGFIX.
 	Tester lub członek zespołu w trakcie znalezienia błędu tworzy ticket z etykietą BUGFIX.
 	9 Po zakończeniu sprintu wszystkie tickety z kolumny done trafiają do kolumny podsumowywującej sprint.
-	10. Każde ukończenie działającej, kompletnej finkcjonalności jest oznaczane przez SMa nowym release tagiem.
+	10. Każde ukończenie działającej, kompletnej funkcjonalności jest oznaczane przez SMa nowym release tagiem.
 
 
 
