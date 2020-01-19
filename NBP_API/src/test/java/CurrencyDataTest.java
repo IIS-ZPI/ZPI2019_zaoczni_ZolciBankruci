@@ -26,7 +26,7 @@ public class CurrencyDataTest {
     }
 
     @Test
-    public void getPairRates() {
+    public void getPairRates() throws Exception {
         CurrencyData result = new CurrencyData(CurrencySymbols.EUR.toString(), CurrencySymbols.USD.toString(), LocalDate.of(2020, 1, 12), LocalDate.of(2020, 1, 13));
         ArrayList<ArrayList<Double>> arrayLists = new ArrayList<>();
         ArrayList<Double> rates = new ArrayList<>();
@@ -34,5 +34,15 @@ public class CurrencyDataTest {
         rates.add(3.8101);
         arrayLists.add(rates);
         assertEquals(arrayLists, result.getPairRates());
+
+        CurrencyData result2 = new CurrencyData(CurrencySymbols.EUR.toString(), LocalDate.of(2020, 1, 12), LocalDate.of(2020, 1, 13));
+        try {
+            assertEquals("You can't use this method for just one currency!", result2.getPairRates());
+            fail( "Should have thrown an exception" );
+        }
+        catch (Exception e) {
+            String expectedMessage = "You can't use this method for just one currency!";
+            assertEquals("Exception message must be correct", expectedMessage, e.getMessage());
+        }
     }
 }
