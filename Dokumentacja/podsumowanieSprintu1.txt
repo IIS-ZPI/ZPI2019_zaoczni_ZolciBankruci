@@ -1,10 +1,32 @@
 Sprint 1 niedziela 12.01.2020
-
 Cel sprintu: Zebrać wymagania wstępne do projektu oraz przygotować środowisko developerskie.
-
 Sprint trwał 1 dzień, podczas którego:
-
 Wybraliśmy technologie, w których przygotujemy nasz projekt.
 Przygotowaliśmy wstępny zarys pliku README.md.
 Repozytorium zostalo zainicjalizowane szablonem projektu.
 Zaplanowaliśmy pracę nad frontendem.
+Zaplanowaliśmy Tworzenie pipelinea post commitowego.
+Do repozytorium trafiły commity związane z wczytywaniem danych z API NBP.
+Podjęliśmy się wykonania 10 zadań. W wyznaczonym terminie udało się wykonać 8.
+
+
+Sprint 2 wtorek - środa 14-15.01.2020
+Został wyznaczyny scope testów
+Udało się wykonać 7 z 11 zadań
+odbyło się 15 minutowe spotkanie podsumowywujące kolejny dzień pracy.
+Prym wiedzie debata odnośnie połączenia frontendu z backendem. 70% backendu jest gotowe, jednak zastanawiamy się, czy zostawić obecne rozwiązanie, czy nie wystawić serwera springboota, który będzie odpowiedzialny za zwracanie JSONów z danymy, z których skorzysta Angular.
+Zastanawiamy się, czy zczytywać dane z NBP API przy każdym zapytaniu, co będzie bardzo proste w implementacji, czy robić to raz dziennie i zapisywać w bazie.
+Oddbyło się krótkie spotkanie podsumowywujące sprint
+
+
+Sprint 3 środa - niedziela 19.01.2020
+Wykonaliśmy 8 z 13 zaplanowanych zadań.
+Część zadań zmieniła się podczas sprintu.
+Zmieniliśmy technologie frontendu oraz postawiliśmy pipeline.
+Job triggerujący się po pull requescie działa prawidłowo.
+W trakcie joba kompilowany jest projekt, uruchamiane są testy jednostkowe, checkstyle oraz sprawdzanie kodu pod względem pokrycia testami.
+Aktualne pokrycie wynosi 75%.
+Frontend jest wykonany w 70%.
+
+
+Sprint 4 poniedziałek - środa 22.01.2020

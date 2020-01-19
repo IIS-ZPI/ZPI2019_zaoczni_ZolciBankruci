@@ -13,9 +13,9 @@ Dokumenty z serii podsumowanieSprintu - opis zrobionych zadań podczas sprintu w
 
 ### Odnośniki
 <ul>
-<li>Repozytorium: https://github.com/IIS-ZPI/ZPI2019_zaoczni_ZolciBankruci/pull/27</li>
-<li>Tablica trello: https://trello.com/2019_zpi_zolcibankruci</li>
-<li>CI pipeline:</li>
+<li> <a href="https://github.com/IIS-ZPI/ZPI2019_zaoczni_ZolciBankruci/">Repozytorium</a></li>
+<li> <a href="https://trello.com/2019_zpi_zolcibankruci">Tablica trello</a></li>
+<li> <a href="https://dev.azure.com/202201/Zarzadzanie_projektami/_build">CI pipeline</a></li>
 </ul>
 
 
@@ -24,9 +24,8 @@ Dokumenty z serii podsumowanieSprintu - opis zrobionych zadań podczas sprintu w
 Techniczne:
 
 BackEnd:     Java
-FrontEnd:    Angular
-CI:          Jenkins
-Baza danych  ??
+FrontEnd:    JavaFX
+CI:          Azure DevOps
 IDE:         intellij idea
 
 Organizacyjne:
@@ -69,17 +68,18 @@ Przykłady
 Wyjaśnienie
 
 ```
-Przyklady
+Przykłady
 ```
 
-## Authors
-<ul>
-<li>Zbyszek212322    212322    DEV</li>
-<li>mojzesowic          187574    DEV FRONT</li>
-<li>ApuApustaja         202201    DEVOPS</li>
-<li>wynkelring            212487    DEV</li>
-<li>alterwik                 212318    SM TESTER</li>
-</ul>
+## Autorzy
+
+Git ID| Nr indeksu | Rola |
+--- | --- | ---
+Zbyszek212322 | 212322 | DEV
+mojzesowic | 187574 | DEV FRONT
+ApuApustaja | 202201 | DEVOPS
+wynkelring | 212487 | DEV
+alterwik | 212318 | SM TESTER
 
 
 
