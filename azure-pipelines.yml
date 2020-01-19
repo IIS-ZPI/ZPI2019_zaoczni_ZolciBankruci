@@ -26,7 +26,7 @@ steps:
     checkStyleRunAnalysis: true
 
     # testRunTitle: # Optional
-    codeCoverageToolOption: 'None' # Optional. Options: none, cobertura, jaCoCo. Enabling code coverage inserts the `clean` goal into the Maven goals list when Maven runs.
+    codeCoverageToolOption: 'cobertura' # Optional. Options: none, cobertura, jaCoCo. Enabling code coverage inserts the `clean` goal into the Maven goals list when Maven runs.
     #codeCoverageClassFilter: # Optional. Comma-separated list of filters to include or exclude classes from collecting code coverage. For example: +:com.*,+:org.*,-:my.app*.*
     #codeCoverageClassFilesDirectories: # Optional
     codeCoverageSourceDirectories: NBP_API/src/main/java/
