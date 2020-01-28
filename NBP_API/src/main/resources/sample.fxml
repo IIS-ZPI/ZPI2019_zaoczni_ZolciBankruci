@@ -126,8 +126,8 @@
                 </FXCollections>
             </items>
         </ChoiceBox>
-        <Label fx:id="label" alignment="TOP_LEFT" prefHeight="250.0" prefWidth="361.0" GridPane.columnIndex="3" GridPane.columnSpan="4" GridPane.rowIndex="2" GridPane.rowSpan="2" />
-      <LineChart GridPane.columnIndex="3" GridPane.rowIndex="4">
+        <Label fx:id="label" alignment="TOP_LEFT" prefHeight="250.0" prefWidth="361.0" GridPane.columnIndex="3" GridPane.columnSpan="4" GridPane.rowIndex="1" GridPane.rowSpan="2" />
+      <LineChart prefHeight="150.0" prefWidth="348.0" GridPane.columnIndex="3" GridPane.rowIndex="4">
         <xAxis>
           <CategoryAxis side="BOTTOM" />
         </xAxis>
