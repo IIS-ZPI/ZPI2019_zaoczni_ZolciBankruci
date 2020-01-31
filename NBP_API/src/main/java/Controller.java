@@ -1,4 +1,3 @@
-import javafx.collections.ObservableList;
 import javafx.fxml.FXML;
 import javafx.scene.chart.*;
 import javafx.scene.control.ChoiceBox;
@@ -51,13 +50,14 @@ public class Controller {
     }
 
     public void zmianyOkresowe() throws Exception {
+        chartPeriod.getData().clear();
         Periods periodLastMonth = Periods.PREV_MONTH;
         Periods periodLastQuater = Periods.LAST_QUARTER;
         DateTimeFormatter formatter = DateTimeFormatter.ofPattern("yyyy-MM-dd");
         LocalDate dateLastMonth = LocalDate.parse(periodLastMonth.toString(), formatter);
         LocalDate dateLastQuater = LocalDate.parse(periodLastQuater.toString(), formatter);
-        CurrencyData currencyDataLastMonth = new CurrencyData(CurrencySymbols.EUR.toString(), CurrencySymbols.USD.toString(), dateLastMonth, dateLastMonth.plusMonths(1));
-        CurrencyData currencyDataLastQuater = new CurrencyData(CurrencySymbols.EUR.toString(), CurrencySymbols.USD.toString(), dateLastQuater, dateLastQuater.plusMonths(3));
+        CurrencyData currencyDataLastMonth = new CurrencyData(waluta1.getValue().toString(), waluta2.getValue().toString(), dateLastMonth, dateLastMonth.plusMonths(1));
+        CurrencyData currencyDataLastQuater = new CurrencyData(waluta1.getValue().toString(), waluta2.getValue().toString(), dateLastQuater, dateLastQuater.plusMonths(3));
         ChangesDistributor changesDistributorLastMonth = new ChangesDistributor(currencyDataLastMonth);
         ChangesDistributor changesDistributorLastQuater = new ChangesDistributor(currencyDataLastQuater);
         XYChart.Series seriesQuarter = new XYChart.Series();
