@@ -12,7 +12,7 @@
 
 
 <?import javafx.collections.FXCollections?>
-<StackPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller">
+<StackPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/8.0.241" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller">
    <children>
       <Button fx:id="sesje" mnemonicParsing="false" onAction="#iloscSesji" prefHeight="25.0" prefWidth="70.0" text="Sesje" StackPane.alignment="TOP_LEFT">
          <StackPane.margin>
