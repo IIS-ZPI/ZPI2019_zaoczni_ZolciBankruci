@@ -29,4 +29,12 @@ Aktualne pokrycie wynosi 75%.
 Frontend jest wykonany w 70%.
 
 
-Sprint 4 poniedziałek - środa 22.01.2020
+Sprint 4 poniedziałek - niedziela 26.01.2020
+Wykonaliśmy 9 z 11 zadań.
+Celem jest ukończenie frontendu.
+Frontend został wykonany w javaFX.
+
+
+Sprint 5 poniedziałek - niedziela 02.02.2020
+Celem jest dokończenie dokumentacji oraz zmiana wersji javy na nowszą, która umożliwi połączenie frontendu z backendem.
+Drobne poprawki w działaniu pipeline.
