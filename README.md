@@ -1,10 +1,10 @@
-# ZolciBankruci NBP API
+# Żółci Bankruci NBP API
 
 Opis:
 
 ### Struktura dokumentacji
 ```
-Dokument wayOfWorking.txt - 
+Dokument wayOfWorking.txt - Opis schematu pracy podczas tworzenia oprogramowania
 
 TODO: Dokument obowiazkiZespolu.txt - opis zadań poszczególnych członków zespołu
 
@@ -12,18 +12,20 @@ Dokumenty z serii podsumowanieSprintu - opis zrobionych zadań podczas sprintu w
 ```
 
 ### Odnośniki
-Repozytorium: https://github.com/IIS-ZPI/ZPI2019_zaoczni_ZolciBankruci/pull/27
-Tablica trello: https://trello.com/2019_zpi_zolcibankruci
-CI pipeline:
+<ul>
+<li> <a href="https://github.com/IIS-ZPI/ZPI2019_zaoczni_ZolciBankruci/">Repozytorium</a></li>
+<li> <a href="https://trello.com/2019_zpi_zolcibankruci">Tablica trello</a></li>
+<li> <a href="https://dev.azure.com/202201/Zarzadzanie_projektami/_build">CI pipeline</a></li>
+</ul>
+
 
 ### Użyte technologie
 ```
 Techniczne:
 
 BackEnd:     Java
-FrontEnd:    Angular
-CI:          Jenkins
-Baza danych  ??
+FrontEnd:    JavaFX
+CI:          Azure DevOps
 IDE:         intellij idea
 
 Organizacyjne:
@@ -66,13 +68,18 @@ Przykłady
 Wyjaśnienie
 
 ```
-Przyklady
+Przykłady
 ```
 
-## Authors
+## Autorzy
 
-Zbyszek212322    212322    DEV
-mojzesowic          187574    DEV FRONT
-ApuApustaja         202201    DEVOPS
-wynkelring            212487    DEV
-alterwik                 212318    SM TESTER
+Git ID| Nr indeksu | Rola |
+--- | --- | ---
+Zbyszek212322 | 212322 | DEV
+mojzesowic | 187574 | DEV FRONT
+ApuApustaja | 202201 | DEVOPS
+wynkelring | 212487 | DEV
+alterwik | 212318 | SM TESTER
+
+
+
