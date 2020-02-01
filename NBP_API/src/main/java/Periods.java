@@ -1,12 +1,42 @@
 import java.time.LocalDate;
 
 public enum Periods {
-    ONE_WEEK,
-    TWO_WEEKS,
-    ONE_MONTH,
-    THREE_MONTHS,
-    SIX_MONTHS,
-    ONE_YEAR,
+    ONE_WEEK {
+        public String toString(){
+            LocalDate today = LocalDate.now().minusDays(7);
+            return today.toString();
+        }
+    },
+    TWO_WEEKS {
+        public String toString(){
+            LocalDate today = LocalDate.now().minusWeeks(2);
+            return today.toString();
+        }
+    },
+    ONE_MONTH {
+        public String toString(){
+            LocalDate today = LocalDate.now().minusMonths(1);
+            return today.toString();
+        }
+    },
+    THREE_MONTHS {
+        public String toString(){
+            LocalDate today = LocalDate.now().minusMonths(3);
+            return today.toString();
+        }
+    },
+    SIX_MONTHS {
+        public String toString(){
+            LocalDate today = LocalDate.now().minusMonths(6);
+            return today.toString();
+        }
+    },
+    ONE_YEAR {
+        public String toString(){
+            LocalDate today = LocalDate.now().minusYears(1);
+            return today.toString();
+        }
+    },
     LAST_QUARTER {
         public String toString(){
             LocalDate today = LocalDate.now();
