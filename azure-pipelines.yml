@@ -26,4 +26,3 @@ steps:
     checkStyleRunAnalysis: true
     codeCoverageToolOption: 'JaCoCo'
     codeCoverageFailIfEmpty: true
-    pathToSources: NBP_API/src/test/java/*
