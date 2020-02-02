@@ -24,5 +24,5 @@ steps:
     testResultsFiles: '**/surefire-reports/TEST-*.xml'
     goals: 'package'
     checkStyleRunAnalysis: true
-    codeCoverageToolOption: 'jaCoCo'
+    codeCoverageToolOption: 'JaCoCo'
     codeCoverageFailIfEmpty: true

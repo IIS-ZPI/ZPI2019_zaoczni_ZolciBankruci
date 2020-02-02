@@ -6,8 +6,6 @@ Opis:
 ```
 Dokument wayOfWorking.txt - Opis schematu pracy podczas tworzenia oprogramowania
 
-TODO: Dokument obowiazkiZespolu.txt - opis zadań poszczególnych członków zespołu
-
 Dokumenty z serii podsumowanieSprintu - opis zrobionych zadań podczas sprintu wraz z raportami odnośnie błędów i wyników z testów.
 ```
 
@@ -36,7 +34,7 @@ Board:       Trello
 
 ### Wymagania wstępne
 
-Co musi być wstępnie zainstalowane, oraz jak uruchomić projekt?
+Java 11, maven.
 
 ```
 Przykłady
@@ -44,32 +42,15 @@ Przykłady
 
 ### Instalacja
 
-Krok po kroku, jak uruchomić projekt.
-
-```
-Przykłady
-```
+zaimportuj projekt do intelij i uruchom.
 
 ## Uruchamianie testów
-
-Krok po kroku jak uruchomić poszczególne testy dla projektu.
-
+Lokalne uruchomienie testów jednostkowych z intelij:
+wykonaj polecenie: run all tests in test/java.
 
 ### Opis testów
 
-wraz z wyjaśnieniem czemu i do czego zostały użyte.
-
-```
-Przykłady
-```
-
-### Testy sprawdzające styl kodu
-
-Wyjaśnienie
-
-```
-Przykłady
-```
+Testy jednostkowe pozwalają weryfikowac poprawnoć pojedyńczych fragmentów kodu. 
 
 ## Autorzy
 
