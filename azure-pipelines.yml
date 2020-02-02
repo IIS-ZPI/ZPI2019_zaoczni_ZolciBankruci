@@ -24,5 +24,6 @@ steps:
     testResultsFiles: '**/surefire-reports/TEST-*.xml'
     goals: 'package'
     checkStyleRunAnalysis: true
-    codeCoverageToolOption: 'cobertura'
+    codeCoverageToolOption: 'JaCoCo'
     codeCoverageFailIfEmpty: true
+    pathToSources: NBP_API/src/test/java/*
