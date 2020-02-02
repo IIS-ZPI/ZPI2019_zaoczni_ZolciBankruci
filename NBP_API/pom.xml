@@ -62,16 +62,4 @@
             <version>2.10.1</version>
         </dependency>
     </dependencies>
-    <properties>
-        <!-- Sonar configuration -->
-        <jacoco.report.ut>${project.build.directory}/jacoco-ut.exec</jacoco.report.ut>
-        <jacoco.report.it>${project.build.directory}/jacoco-it.exec</jacoco.report.it>
-
-        <sonar.language>java</sonar.language>
-        <sonar.sources>src/main/java</sonar.sources>
-        <sonar.tests>src/test/java</sonar.tests>
-        <sonar.junit.reportPaths>${project.build.directory}/surefire-reports</sonar.junit.reportPaths>
-        <sonar.jacoco.reportPaths>${jacoco.report.ut},${jacoco.report.it}</sonar.jacoco.reportPaths>
-    </properties>
-
 </project>
