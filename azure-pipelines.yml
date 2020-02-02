@@ -25,4 +25,7 @@ steps:
     goals: 'package'
     checkStyleRunAnalysis: true
     codeCoverageToolOption: 'JaCoCo'
+    #codeCoverageClassFilter: # Optional. Comma-separated list of filters to include or exclude classes from collecting code coverage. For example: +:com.*,+:org.*,-:my.app*.*
+    #codeCoverageClassFilesDirectories: # Optional
+    codeCoverageSourceDirectories: 'NBP_API/src/test/java'
     codeCoverageFailIfEmpty: true
