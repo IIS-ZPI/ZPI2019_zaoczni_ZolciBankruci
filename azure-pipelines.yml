@@ -12,25 +12,25 @@ pr:
 - release_tag_test
 
 jobs:
-  - job: A
-    pool:
+- job: 'A'
+  pool:
       vmImage: 'ubuntu-latest'
-    steps:
-    - task: Maven@3
-      inputs:
-        mavenPomFile: 'NBP_API/pom.xml'
-        mavenOptions: '-Xmx3072m'
-        javaHomeOption: 'JDKVersion'
-        jdkVersionOption: '1.11'
-        jdkArchitectureOption: 'x64'
-        publishJUnitResults: true
-        testResultsFiles: '**/surefire-reports/TEST-*.xml'
-        goals: 'package'
-        checkStyleRunAnalysis: true
-        codeCoverageToolOption: 'JaCoCo'
-        codeCoverageFailIfEmpty: true
+  steps:
+      - task: Maven@3
+        inputs:
+          mavenPomFile: 'NBP_API/pom.xml'
+          mavenOptions: '-Xmx3072m'
+          javaHomeOption: 'JDKVersion'
+          jdkVersionOption: '1.11'
+          jdkArchitectureOption: 'x64'
+          publishJUnitResults: true
+          testResultsFiles: '**/surefire-reports/TEST-*.xml'
+          goals: 'package'
+          checkStyleRunAnalysis: true
+          codeCoverageToolOption: 'JaCoCo'
+          codeCoverageFailIfEmpty: true
 
-- job:B
+- job: B
   pool: server
   steps:
   - task: InvokeRESTAPI@1
