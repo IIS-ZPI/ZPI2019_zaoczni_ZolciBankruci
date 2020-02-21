@@ -5,9 +5,11 @@
 
 trigger:
 - master
+- release_tag_test
 
 pr:
 - develop
+- release_tag_test
 
 pool:
   vmImage: 'ubuntu-latest'
@@ -37,7 +39,7 @@ steps:
       }
     body: |
       {
-          "tag_name": "v1." + $(release_version) + ".0",
+          "tag_name": "v1.9." + $(Rev:rr),
           "target_commitish": "develop"
       }
     waitForCompletion: 'false'
