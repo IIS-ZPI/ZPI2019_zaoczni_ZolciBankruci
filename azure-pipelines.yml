@@ -26,3 +26,18 @@ steps:
     checkStyleRunAnalysis: true
     codeCoverageToolOption: 'JaCoCo'
     codeCoverageFailIfEmpty: true
+
+- task: InvokeRESTAPI@1
+  inputs:
+    connectionType: 'connectedServiceName'
+    method: 'POST'
+    headers: |
+      {
+      "Authorization" : ($auth_token_rel)
+      }
+    body: |
+      {
+          "tag_name": "v1." + $(release_version) + ".0",
+          "target_commitish": "develop"
+      }
+    waitForCompletion: 'false'
