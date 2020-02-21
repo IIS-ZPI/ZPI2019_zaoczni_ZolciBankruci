@@ -44,7 +44,7 @@ jobs:
         }
       body: |
         {
-            "tag_name": "v1.9." + $(Rev:rr),
+            "tag_name": 1.9.$(Rev:rr),
             "target_commitish": "develop"
         }
       waitForCompletion: 'false'
