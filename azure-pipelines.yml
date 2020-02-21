@@ -11,7 +11,7 @@ pr:
 - develop
 - realease_tag_test
 
-name: 1.10.$(Rev:.rr)
+name: 1.11$(Rev:.rr)
 
 jobs:
 - job: 'A'
