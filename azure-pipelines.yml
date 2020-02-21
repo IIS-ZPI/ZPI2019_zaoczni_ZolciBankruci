@@ -5,11 +5,11 @@
 
 trigger:
 - master
-- release_tag_test
+- realease_tag_test
 
 pr:
 - develop
-- release_tag_test
+- realease_tag_test
 
 jobs:
 #- job: 'A'
