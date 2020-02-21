@@ -40,7 +40,8 @@ jobs:
       method: 'POST'
       headers: |
         {
-        "Authorization" : ($auth_token_rel)
+         "Content-Type" : application/json 
+        #"Authorization" : ($auth_token_rel)
         }
       body: |
         {
