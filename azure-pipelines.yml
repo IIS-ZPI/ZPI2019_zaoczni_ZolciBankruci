@@ -11,6 +11,8 @@ pr:
 - develop
 - realease_tag_test
 
+name: 1.10.$(Rev:.rr)
+
 jobs:
 - job: 'A'
   pool:
@@ -29,23 +31,23 @@ jobs:
           checkStyleRunAnalysis: true
           codeCoverageToolOption: 'JaCoCo'
           codeCoverageFailIfEmpty: true
-        condition: eq(variables['Build.Reason'], 'IndividualCI') 
 
-#- job: B
-#  pool: server
-#  steps:
-#  - task: InvokeRESTAPI@1
-#    inputs:
-#      connectionType: 'connectedServiceName'
-#      serviceConnection: 'git_rel_aut'
- #     method: 'POST'
-#      headers: |
- #       {
-#         "Content-Type" : "application/json" 
- #       }
- #     body: |
-#        {
- #           "tag_name": "$(Build.BuildNumber)",
- #           "target_commitish": "develop"
- #       }
-  #    waitForCompletion: 'false'
+- job: B
+  pool: server
+  steps:
+  - task: InvokeRESTAPI@1
+    inputs:
+      connectionType: 'connectedServiceName'
+      serviceConnection: 'git_rel_aut'
+      method: 'POST'
+      headers: |
+        {
+          "Content-Type" : "application/json" 
+        }
+      body: |
+        {
+            "tag_name": "$(Build.BuildNumber)",
+            "target_commitish": "develop"
+        }
+      waitForCompletion: 'false'
+    condition: eq(variables['Build.Reason'], 'IndividualCI') 
