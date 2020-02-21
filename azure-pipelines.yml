@@ -15,7 +15,7 @@ jobs:
 pool:
   vmImage: 'ubuntu-latest'
 
-steps:
+  steps:
 - task: Maven@3
   inputs:
     mavenPomFile: 'NBP_API/pom.xml'
