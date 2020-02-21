@@ -36,6 +36,7 @@ jobs:
   - task: InvokeRESTAPI@1
     inputs:
       connectionType: 'connectedServiceName'
+      serviceConnection: 'git_rel_aut'
       method: 'POST'
       headers: |
         {
