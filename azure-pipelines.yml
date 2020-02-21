@@ -9,7 +9,6 @@ trigger:
 
 pr:
 - develop
-- realease_tag_test
 
 name: 1.11$(Rev:.rr)
 
