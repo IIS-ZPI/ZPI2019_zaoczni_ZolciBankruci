@@ -15,7 +15,7 @@ jobs:
 pool:
   vmImage: 'ubuntu-latest'
 
-  steps:
+steps:
 - task: Maven@3
   inputs:
     mavenPomFile: 'NBP_API/pom.xml'
@@ -31,7 +31,7 @@ pool:
     codeCoverageFailIfEmpty: true
 
 - job: B
-  pool: server
+pool: server
 
 - task: InvokeRESTAPI@1
   inputs:
