@@ -5,9 +5,11 @@
 
 trigger:
 - master
+- release_tag_test
 
 pr:
 - develop
+- release_tag_test
 
 pool:
   vmImage: 'ubuntu-latest'
@@ -26,3 +28,18 @@ steps:
     checkStyleRunAnalysis: true
     codeCoverageToolOption: 'JaCoCo'
     codeCoverageFailIfEmpty: true
+
+- task: InvokeRESTAPI@1
+  inputs:
+    connectionType: 'connectedServiceName'
+    method: 'POST'
+    headers: |
+      {
+      "Authorization" : ($auth_token_rel)
+      }
+    body: |
+      {
+          "tag_name": "v1.9." + $(Rev:rr),
+          "target_commitish": "develop"
+      }
+    waitForCompletion: 'false'
