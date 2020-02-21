@@ -11,6 +11,8 @@ pr:
 - develop
 - realease_tag_test
 
+name: 1.10.$(Rev:.rr)
+
 jobs:
 - job: 'A'
   pool:
