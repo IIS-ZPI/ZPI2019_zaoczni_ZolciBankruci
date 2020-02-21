@@ -44,7 +44,7 @@ jobs:
         }
       body: |
         {
-            "tag_name": "1.10.$(release_version)",
+            "tag_name": "$(Build.BuildNumber)",
             "target_commitish": "develop"
         }
       waitForCompletion: 'false'
