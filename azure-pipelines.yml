@@ -10,7 +10,8 @@ trigger:
 pr:
 - develop
 - release_tag_test
-
+jobs:
+- job: A
 pool:
   vmImage: 'ubuntu-latest'
 
@@ -28,6 +29,9 @@ steps:
     checkStyleRunAnalysis: true
     codeCoverageToolOption: 'JaCoCo'
     codeCoverageFailIfEmpty: true
+
+- job: B
+  pool: server
 
 - task: InvokeRESTAPI@1
   inputs:
