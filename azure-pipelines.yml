@@ -31,7 +31,6 @@ jobs:
           checkStyleRunAnalysis: true
           codeCoverageToolOption: 'JaCoCo'
           codeCoverageFailIfEmpty: true
-        condition: eq(variables['Build.Reason'], 'IndividualCI') 
 
 - job: B
   pool: server
@@ -51,3 +50,4 @@ jobs:
             "target_commitish": "develop"
         }
       waitForCompletion: 'false'
+    condition: eq(variables['Build.Reason'], 'IndividualCI') 
