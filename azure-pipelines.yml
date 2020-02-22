@@ -9,7 +9,7 @@ trigger:
 
 pr:
 - develop
-
+- realease_tag_test
 name: 1.11$(Rev:.rr)
 
 jobs:
@@ -49,4 +49,18 @@ jobs:
             "target_commitish": "develop"
         }
       waitForCompletion: 'false'
-    condition: eq(variables['Build.Reason'], 'IndividualCI') 
+    #condition: eq(variables['Build.Reason'], 'IndividualCI')
+- job: C
+  pool: server
+  steps:
+  - task: InvokeRESTAPI@1
+    inputs:
+      connectionType: 'connectedServiceName'
+      serviceConnection: 'uploadjar'
+      method: 'POST'
+      headers: 
+      body: |
+        {
+        name: $(Build.ArtifactStagingDirectory)
+        }
+      waitForCompletion: 'false'
