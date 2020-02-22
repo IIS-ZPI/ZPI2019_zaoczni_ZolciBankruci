@@ -61,6 +61,6 @@ jobs:
       headers: 
       body: |
         {
-        name: $(Build.ArtifactStagingDirectory)
+        "name": $(Build.ArtifactStagingDirectory)
         }
       waitForCompletion: 'false'
