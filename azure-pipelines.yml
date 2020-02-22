@@ -42,7 +42,7 @@ jobs:
       rootFolderOrFile: '$(Build.BinariesDirectory)'
       includeRootFolder: true
       archiveType: 'zip'
-      archiveFile: '$(Build.ArtifactStagingDirectory)/build.zip'
+      archiveFile: 'build.zip'
       replaceExistingArchive: true
 - job: B
   dependsOn: T
@@ -82,6 +82,6 @@ jobs:
         }
       body: |
         {
-        "name": $(Build.ArtifactStagingDirectory)/build.zip
+        "name": "build.zip"
         }
       waitForCompletion: 'false'
