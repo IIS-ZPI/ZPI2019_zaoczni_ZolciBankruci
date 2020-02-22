@@ -32,6 +32,8 @@ jobs:
           codeCoverageFailIfEmpty: true
 
 - job: B
+  dependsOn: A
+  condition: succeeded() 
   pool: server
   steps:
   - task: InvokeRESTAPI@1
@@ -51,6 +53,8 @@ jobs:
       waitForCompletion: 'false'
     #condition: eq(variables['Build.Reason'], 'IndividualCI')
 - job: C
+  dependsOn: B
+  condition: succeeded() 
   pool: server
   steps:
   - task: InvokeRESTAPI@1
