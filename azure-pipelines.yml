@@ -42,7 +42,7 @@ jobs:
       rootFolderOrFile: '$(Build.BinariesDirectory)'
       includeRootFolder: true
       archiveType: 'zip'
-      archiveFile: '$(Build.ArtifactStagingDirectory)/$(Build.BuildId).zip'
+      archiveFile: '$(Build.ArtifactStagingDirectory)/build.zip'
       replaceExistingArchive: true
 - job: B
   dependsOn: T
@@ -77,11 +77,11 @@ jobs:
       method: 'POST'
       headers: |
         {
-        "Content-Type":"multipart/form-data", 
+        "Content-Type":"application/zip", 
         
         }
       body: |
         {
-        "name": $(Build.ArtifactStagingDirectory)
+        "name": $(Build.ArtifactStagingDirectory)/build.zip
         }
       waitForCompletion: 'false'
