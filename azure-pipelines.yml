@@ -81,6 +81,6 @@ jobs:
         }
       body: |
         {
-        "name": "build.zip"
+        "name": build.zip
         }
       waitForCompletion: 'false'
