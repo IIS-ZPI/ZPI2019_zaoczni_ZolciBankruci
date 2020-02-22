@@ -62,7 +62,11 @@ jobs:
       connectionType: 'connectedServiceName'
       serviceConnection: 'uploadjar'
       method: 'POST'
-      headers: 
+      headers: |
+        {
+        "Content-Type":"multipart/form-data", 
+        
+        }
       body: |
         {
         "name": $(Build.ArtifactStagingDirectory)
