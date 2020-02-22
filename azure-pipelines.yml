@@ -30,9 +30,22 @@ jobs:
           checkStyleRunAnalysis: true
           codeCoverageToolOption: 'JaCoCo'
           codeCoverageFailIfEmpty: true
-
-- job: B
+- job: T
+  pool:
+      vmImage: 'ubuntu-latest'
   dependsOn: A
+  condition: succeeded() 
+     
+  steps:
+  - task: ArchiveFiles@2
+    inputs:
+      rootFolderOrFile: '$(Build.BinariesDirectory)'
+      includeRootFolder: true
+      archiveType: 'zip'
+      archiveFile: '$(Build.ArtifactStagingDirectory)/$(Build.BuildId).zip'
+      replaceExistingArchive: true
+- job: B
+  dependsOn: T
   condition: succeeded() 
   pool: server
   steps:
